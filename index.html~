@@ -43,9 +43,6 @@
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-    <div id ="myPage">
-        <iframe id="myPageFrame" src="myPage.html" height=100% width=100% frameborder="0" border="0" scrolling="0" ></iframe>
-    </div>
 
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
@@ -58,5 +55,18 @@
         </aside>
       </div>
     </div>
+    <div id ="myPage">
+        <iframe id="myPageFrame" src="myPage.html" height=100% width=100% frameborder="0" border="0" scrolling="0" onload="iFrameHeight()" ></iframe>
+    </div>
+<script type="text/javascript" language="javascript">   
+function iFrameHeight() {   
+    var ifm= document.getElementById("iframepage");   
+    var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
+    if(ifm != null && subWeb != null) {
+           ifm.height = subWeb.body.scrollHeight;
+              ifm.width = subWeb.body.scrollWidth;
+    }   
+}   
+</script>
   </body>
 </html>
