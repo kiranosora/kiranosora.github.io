@@ -69,7 +69,6 @@ function iFrameHeight(ifm) {
               ifm.width = subWeb.body.scrollWidth;
     */
     }   
-}   
 </script>
   </body>
 </html>
