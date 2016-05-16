@@ -7,6 +7,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   font-size: 3em;
+  font-color:red
   letter-spacing: 0.1em;
   /*color: #EEE;*/ 
   color: #EFF;
@@ -61,7 +62,7 @@ footer {
 }
 </style>
 
-<h1 data-shadow="CSS 3D Lettering">
+<h1  data-shadow="CSS 3D Lettering">
     CSS 3D Lettering
 </h1>
 
