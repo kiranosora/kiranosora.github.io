@@ -56,15 +56,17 @@
       </div>
     </div>
     <div id ="myPage">
-        <iframe id="myPageFrame" src="myPage.html" height=100% width=100% frameborder="0" border="0" scrolling="0" onload="iFrameHeight()" ></iframe>
+        <iframe id="myPageFrame" src="myPage.html" height=100% width=100% frameborder="0" border="0" scrolling="0" onload="iFrameHeight(window.frameElement)" ></iframe>
     </div>
 <script type="text/javascript" language="javascript">   
-function iFrameHeight() {   
-    var ifm= document.getElementById("iframepage");   
-    var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
-    if(ifm != null && subWeb != null) {
+function iFrameHeight(ifm) {   
+    //var ifm= document.getElementById("iframepage");   
+    
+    //var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
+    /*if(ifm != null && subWeb != null) {
            ifm.height = subWeb.body.scrollHeight;
               ifm.width = subWeb.body.scrollWidth;
+    */
     }   
 }   
 </script>
