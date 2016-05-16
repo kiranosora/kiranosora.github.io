@@ -1,3 +1,3 @@
-<iframe id="letter 3d" src="letter3d.html" height=100% frameborder="0" border="0" scrolling="0"></iframe>
-<iframe id="letter twinkling" src="twinklingFont.html" height=100% frameborder="0" border="0" scrolling="0"></iframe>
+<iframe id="letter 3d" src="letter3d.html" height=100% width=100% frameborder="0" border="0" scrolling="0"></iframe>
+<iframe id="letter twinkling" src="twinklingFont.html" height=100% width=100% frameborder="0" border="0" scrolling="0"></iframe>
 
