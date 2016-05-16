@@ -8,8 +8,7 @@ h1 {
   text-transform: uppercase;
   font-size: 3em;
   letter-spacing: 0.1em;
-  /*color: #EEE;*/ 
-  color: #EFF;
+  color: #EEE;
   animation: rotate 2s ease-in-out alternate infinite;
 }
 h1:before {
