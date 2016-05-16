@@ -56,7 +56,7 @@
       </div>
     </div>
     <div id ="myPage">
-        <%@ include
-  
+        <% include file="myPage.html" %>
+    </div>
   </body>
 </html>
