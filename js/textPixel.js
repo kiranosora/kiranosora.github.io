@@ -88,12 +88,12 @@
             if(c.movement == 'float') {
                 c.tween = TweenLite.to(c, 5 + Math.random()*3.5, {x: c.x + -100+Math.random()*200, y: c.y + -100+Math.random()*200, ease:Quad.easeInOut, alpha: 0.2 + Math.random()*0.5,
                     onComplete: function() {
-                        tweenCircle(c);
+                        setTimeout(function(){tweenCircle(c)},1000);
                     }});
             } else {
                 c.tween = TweenLite.to(c, 0.05, {x: c.originX + Math.random()*3, y: c.originY + Math.random()*3, ease:Quad.easeInOut,
                     onComplete: function() {
-                        tweenCircle(c);
+                        setTimeout(function(){tweenCircle(c)},1000);
                     }});
             }
         }
