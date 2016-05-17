@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-/*
+
 @font-face {
   font-family: 'Monoton';
   font-style: normal;
@@ -45,7 +45,7 @@
   font-weight: 400;
   src: local('Vampiro One'), local('VampiroOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/vampiroone/v3/Ho2Xld8UbQyBA8XLxF1_NYbN6UDyHWBl620a-IRfuBk.woff) format('woff');
 }
-*/
+
 body{
   background-color: #222222;
 }
@@ -72,7 +72,7 @@ a{
 
 p:nth-child(1) a{
   color:#FF1177;
-  /*font-family:Monoton;*/
+  font-family:Monoton;
 }
 p:nth-child(1) a:hover{
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
@@ -83,7 +83,7 @@ p:nth-child(1) a:hover{
 p:nth-child(2) a{
   font-size:1.5em;
   color:#228DFF;
-  /*font-family:Iceland;*/
+  font-family:Iceland;
 }
 p:nth-child(2) a:hover{
   -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
@@ -93,7 +93,7 @@ p:nth-child(2) a:hover{
 
 p:nth-child(3) a{
   color:#FFDD1B;
-  /*font-family:Pacifico;*/
+  font-family:Pacifico;
 }
 p:nth-child(3) a:hover{ 
   -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
@@ -103,7 +103,7 @@ p:nth-child(3) a:hover{
 
 p:nth-child(4) a{
   color:#B6FF00;
-  /*font-family:PressStart;*/
+  font-family:PressStart;
   font-size:0.8em;
 }
 p:nth-child(4) a:hover{
@@ -114,7 +114,7 @@ p:nth-child(4) a:hover{
 
 p:nth-child(5) a{
   color:#FF9900;
-  /*font-family:Audiowide;*/
+  font-family:Audiowide;
 }
 p:nth-child(5) a:hover{
   -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
@@ -124,7 +124,7 @@ p:nth-child(5) a:hover{
 
 p:nth-child(6) a{
   color:#BA01FF;
-  /*font-family:Vampiro One;*/
+  font-family:Vampiro One;
 }
 p:nth-child(6) a:hover{
   -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
@@ -134,7 +134,7 @@ p:nth-child(6) a:hover{
 
 p:nth-child(7) a{
   color:#BA01FF;
-  /*font-family:Vampiro One;*/
+  font-family:Vampiro One;
 }
 p:nth-child(7) a:hover{
   -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
