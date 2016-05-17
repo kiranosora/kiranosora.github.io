@@ -1,5 +1,5 @@
-<iframe id="letter 3d" src="letter3d.html"  frameborder="0" border="0" scrolling="0" onload="iFrameHeight()"></iframe>
-<iframe id="letter twinkling" src="twinklingFont.html"  frameborder="0" border="0" onload="iFrameHeight()" scrolling="0"></iframe>
+<iframe id="letter 3d" src="letter3d.html"  frameborder="0" border="0" scrolling="0" onload="iFrameHeight(event)"></iframe>
+<iframe id="letter twinkling" src="twinklingFont.html"  frameborder="0" border="0" onload="iFrameHeight(event)" scrolling="0"></iframe>
 
 
 <script type="text/javascript" language="javascript">   
