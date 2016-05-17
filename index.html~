@@ -71,7 +71,7 @@ function iFrameHeight(event) {
     //var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
     if(ifm != null && subWeb != null) {
            //ifm.height = 1024;
-           ifm.height = subWeb.body.scrollHeight;
+           ifm.height = subWeb.body.scrollHeight + subWeb.body.scrollHeight + subWeb.body.scrollHeight;
            //ifm.width = subWeb.body.scrollWidth;
            //ifm.height = document.body.scrollHeight;
            ifm.width = window.screen.width;
