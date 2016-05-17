@@ -16,7 +16,8 @@
 
     // Init Canvas
     function initStages() {
-        offsetX = (window.innerWidth-textLength)/2;
+        offsetX = (window.innerWidth-1200)/2;
+        //offsetX = (window.innerWidth-textLength)/2;
         //offsetX = (window.innerWidth-600)/2;
         offsetY = (window.innerHeight-300)/2;
         textStage = new createjs.Stage("text");
