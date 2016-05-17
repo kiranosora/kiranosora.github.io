@@ -63,8 +63,8 @@ function iFrameHeight(event) {
     //var ifm= document.getElementById("iframepage");   
     
     var ifm=event.srcElement||event.target;
-    //if( ifm == null){ document.write("<p>iframe null</p>");}
-    //else{ document.write("<p>"+ifm+"</p>");}
+    if( ifm == null){ document.write("<p>iframe null</p>");}
+    else{ document.write("<p>"+ifm+"</p>");}
     //var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
     var subWeb= ifm.contentDocument;
     //if(subWeb == null) {document.write("<p>null subWeb !!!!!!!!!!</p>");}
