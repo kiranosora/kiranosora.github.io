@@ -12,9 +12,9 @@ function iFrameHeight(event) {
     else{ alert(ifm);}
     if(ifm != null && subWeb != null) {
            //ifm.height = 1024;
-           //ifm.height = subWeb.body.scrollHeight;
+           ifm.height = subWeb.body.scrollHeight;
            //ifm.width = subWeb.body.scrollWidth;
-           ifm.height = document.body.scrollHeight;
+           //ifm.height = document.body.scrollHeight;
            ifm.width = window.screen.width;
     } 
     }   
