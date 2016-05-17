@@ -67,6 +67,7 @@ function iFrameHeight(event) {
     else{ alert(ifm);}
     //var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
     var subWeb= ifm.contentDocument;
+    if(subWeb == null) {alert("null subWeb !!!!!!!!!!");}
     //var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
     if(ifm != null && subWeb != null) {
            //ifm.height = 1024;
