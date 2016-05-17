@@ -8,16 +8,16 @@ function iFrameHeightInner(event) {
     
     var ifm=event.srcElement||event.target;
     var subWeb= ifm.contentDocument;
-    if(subWeb == null) {alert("null subWeb !!!!!!!!!!");}
+    if(subWeb == null) {document.write("<p>null subWeb !!!!!!!!!!</p>");}
     //var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
-    if( ifm == null){ alert("iframe null");}
-    else{ alert(ifm);}
+    if( ifm == null){ document.write("<p>iframe null</p>");}
+    else{ document.write("<p>"+ifm+"</p>");}
     if(ifm != null && subWeb != null) {
            //ifm.height = 1024;
            ifm.height = subWeb.body.scrollHeight  ;
-           ifm.width = subWeb.body.scrollWidth + subWeb.body.scrollWidth;
+           //ifm.width = subWeb.body.scrollWidth + subWeb.body.scrollWidth;
            //ifm.height = document.body.scrollHeight;
-           //ifm.width = window.screen.width;
+           ifm.width = window.screen.width;
     } 
     }   
 </script>
