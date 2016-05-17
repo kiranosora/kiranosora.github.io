@@ -3,7 +3,7 @@
     var circles, textPixels, textFormed;
     var offsetX, offsetY, text;
     var colors = ['#B2949D', '#FFF578', '#FF5F8D', '#37A9CC', '#188EB2'];
-    var textLength= 1200;
+    var textLength= 1200;/* The maximum length of text to show */
 
     function init() {
         initStages();
@@ -131,7 +131,8 @@
                 explode();
                 if(input.value != '') {
                     setTimeout(function() {
-                        createText(input.value.toUpperCase());
+                        createText("default value ガンダム");
+                        //createText(input.value.toUpperCase());
                     }, 810);
                 } else {
                     textFormed = false;

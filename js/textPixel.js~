@@ -3,7 +3,7 @@
     var circles, textPixels, textFormed;
     var offsetX, offsetY, text;
     var colors = ['#B2949D', '#FFF578', '#FF5F8D', '#37A9CC', '#188EB2'];
-    var textLength= 1200;
+    var textLength= 1200;/* The maximum length of text to show */
 
     function init() {
         initStages();
@@ -16,7 +16,8 @@
 
     // Init Canvas
     function initStages() {
-        offsetX = (window.innerWidth-600)/2;
+        offsetX = (window.innerWidth-textLength)/2;
+        //offsetX = (window.innerWidth-600)/2;
         offsetY = (window.innerHeight-300)/2;
         textStage = new createjs.Stage("text");
         textStage.canvas.width = textLength;
