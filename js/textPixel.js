@@ -131,14 +131,14 @@
                 explode();
                 if(input.value != '') {
                     setTimeout(function() {
-                        createText("default value ガンダム");
+                        createText("DEFAULT VALUE ガンダム");
                         //createText(input.value.toUpperCase());
                     }, 810);
                 } else {
                     textFormed = false;
                 }
             } else {
-                createText("default value ガンダム");
+                createText("DEFAULT VALUE ガンダム");
                 //createText(input.value.toUpperCase());
             }
 
