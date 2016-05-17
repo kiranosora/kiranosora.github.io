@@ -132,16 +132,6 @@ p:nth-child(6) a:hover{
   animation: neon6 1.5s ease-in-out infinite alternate;
 }
 
-p:nth-child(7) a{
-  color:#BA01FF;
-  font-family:Vampiro One;
-}
-p:nth-child(7) a:hover{
-  -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon6 1.5s ease-in-out infinite alternate;
-  animation: neon6 1.5s ease-in-out infinite alternate;
-}
-
 p a:hover{
 color:#ffffff;  
 }
