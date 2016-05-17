@@ -1,15 +1,19 @@
-<iframe id="letter 3d" src="letter3d.html" height=900px width=100% frameborder="0" border="0" scrolling="0" onload="iFrameHeight(window.frameElement)"></iframe>
-<iframe id="letter twinkling" src="twinklingFont.html" height=900px width=100% frameborder="0" border="0" onload="iFrameHeight(window.frameElement)" scrolling="0"></iframe>
+<iframe id="letter 3d" src="letter3d.html"  frameborder="0" border="0" scrolling="0" onload="iFrameHeight()"></iframe>
+<iframe id="letter twinkling" src="twinklingFont.html"  frameborder="0" border="0" onload="iFrameHeight()" scrolling="0"></iframe>
 
 
 <script type="text/javascript" language="javascript">   
-function iFrameHeight(ifm) {   
-    //var ifm= window.frameElement;   
-    /*var ifm= document.getElementById("iframepage");*/   
+function iFrameHeight() {   
+    //var ifm= document.getElementById("iframepage");   
+    
+    var ifm=window.event.srcElement;
     var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
+    if( ifm == null){ alert("iframe null");}
+    else{ alert(ifm);}
     if(ifm != null && subWeb != null) {
-           ifm.height = subWeb.body.scrollHeight;
+           ifm.height = 1024;
+           //ifm.height = subWeb.body.scrollHeight;
               ifm.width = subWeb.body.scrollWidth;
+    } 
     }   
-}   
 </script>
