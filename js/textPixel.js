@@ -16,7 +16,8 @@
 
     // Init Canvas
     function initStages() {
-        offsetX = (window.innerWidth-600)/2;
+        offsetX = (window.innerWidth-textLength)/2;
+        //offsetX = (window.innerWidth-600)/2;
         offsetY = (window.innerHeight-300)/2;
         textStage = new createjs.Stage("text");
         textStage.canvas.width = textLength;
@@ -43,7 +44,8 @@
 
     function initCircles() {
         circles = [];
-        for(var i=0; i<600; i++) {
+        for(var i=0; i<textLength; i++) {
+        //for(var i=0; i<600; i++) {
             var circle = new createjs.Shape();
             var r = 7;
             var x = window.innerWidth*Math.random();
@@ -159,8 +161,10 @@
         textPixels = [];
         for (var i = pix.length; i >= 0; i -= 4) {
             if (pix[i] != 0) {
-                var x = (i / 4) % 600;
-                var y = Math.floor(Math.floor(i/600)/4);
+                var x = (i / 4) % textLength;
+                var y = Math.floor(Math.floor(i/textLength)/4);
+                //var x = (i / 4) % 600;
+                //var y = Math.floor(Math.floor(i/600)/4);
 
                 if((x && x%8 == 0) && (y && y%8 == 0)) textPixels.push({x: x, y: y});
             }
