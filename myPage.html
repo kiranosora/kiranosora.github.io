@@ -8,10 +8,10 @@ function iFrameHeightInner(event) {
     
     var ifm=event.srcElement||event.target;
     var subWeb= ifm.contentDocument;
-    if(subWeb == null) {document.write("<p>null subWeb !!!!!!!!!!</p>");}
+    //if(subWeb == null) {document.write("<p>null subWeb !!!!!!!!!!</p>");}
     //var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
-    if( ifm == null){ document.write("<p>iframe null</p>");}
-    else{ document.write("<p>"+ifm+"</p>");}
+    //if( ifm == null){ document.write("<p>iframe null</p>");}
+    //else{ document.write("<p>"+ifm+"</p>");}
     if(ifm != null && subWeb != null) {
            //ifm.height = 1024;
            ifm.height = subWeb.body.scrollHeight  ;

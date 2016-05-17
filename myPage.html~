@@ -10,7 +10,7 @@ function iFrameHeightInner(event) {
     var subWeb= ifm.contentDocument;
     if(subWeb == null) {document.write("<p>null subWeb !!!!!!!!!!</p>");}
     //var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
-    if( ifm == null){ alert("iframe null");}
+    if( ifm == null){ document.write("<p>iframe null</p>");}
     else{ document.write("<p>"+ifm+"</p>");}
     if(ifm != null && subWeb != null) {
            //ifm.height = 1024;
