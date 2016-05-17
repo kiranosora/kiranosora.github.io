@@ -138,7 +138,8 @@
                     textFormed = false;
                 }
             } else {
-                createText(input.value.toUpperCase());
+                createText("default value ガンダム");
+                //createText(input.value.toUpperCase());
             }
 
         });
