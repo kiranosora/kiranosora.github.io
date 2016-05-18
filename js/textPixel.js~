@@ -93,7 +93,7 @@
             } else {
                 c.tween = TweenLite.to(c, 0.05, {x: c.originX + Math.random()*3, y: c.originY + Math.random()*3, ease:Quad.easeInOut,
                     onComplete: function() {
-                        tweenCircle(c);
+                        setTimeout(function(){tweenCircle(c)},1000);
                     }});
             }
         }
