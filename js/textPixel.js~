@@ -69,7 +69,7 @@
     // animating circles
     function animate() {
         stage.update();
-        setTimeout(function(){requestAnimationFrame(animate);},1000/60);
+        setTimeout(function(){requestAnimationFrame(animate);},1000/24);
         //requestAnimationFrame(animate);
     }
 
