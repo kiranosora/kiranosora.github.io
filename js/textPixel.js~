@@ -61,7 +61,7 @@
             circles.push(circle);
             stage.addChild(circle);
             circle.movement = 'float';
-            tweenCircle(circle);
+            setTimeout(function(){tweenCircle(circle);},2000);
         }
     }
 
