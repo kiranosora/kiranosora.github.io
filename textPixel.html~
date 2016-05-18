@@ -25,7 +25,7 @@
 </div>
   <script src='js/EasePack.min.js'></script><script src='js/TweenLite.min.js'></script><script src='js/easeljs-0.7.1.min.js'></script><script src='js/requestAnimationFrame.js'></script>
 
-  <script src="js/index.js"></script>
+  <script src="js/textPixel.js"></script>
 
 </body>
 
