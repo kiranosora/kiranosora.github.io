@@ -69,7 +69,8 @@
     // animating circles
     function animate() {
         stage.update();
-        requestAnimationFrame(animate);
+        setTimeout(function(){requestAnimationFrame(animate);},1000);
+        //requestAnimationFrame(animate);
     }
 
     function tweenCircle(c, dir) {
