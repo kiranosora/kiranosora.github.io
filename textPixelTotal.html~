@@ -1,1 +1,2 @@
 <iframe id="textPixel1" src="textPixel.html"  frameborder="0" border="0" scrolling="0" onload="iFrameHeightInner(event)"></iframe>
+<iframe id="textPixel2" src="textPixel2.html"  frameborder="0" border="0" scrolling="0" onload="iFrameHeightInner(event)"></iframe>
