@@ -5,7 +5,7 @@
     var heightU, widthU;
     var colors = ['#B2949D', '#FFF578', '#FF5F8D', '#37A9CC', '#188EB2'];
     var textLength= 2000;/* The maximum length of text to show */
-    var timeU=6000;
+    var timeU=8000;
     function init() {
        
         initStages();
@@ -14,7 +14,7 @@
         initCircles();
         animate();
         addListeners();
-        setTimeout(function(){loopExplode();},timeU/20);
+        setTimeout(function(){loopExplode();},timeU/30);
         /*setTimeout(function() {
                     //createText("DEFAULT VALUE ガンダム");
                     setTimeout(function(){createText("曹晶晶");},2000);
@@ -205,7 +205,7 @@
      //setTimeout(function(){alert("delay");},1000);
      setTimeout(function(){explode();},timeU/2);
      //setTimeout(function(){explode();},400);
-     setTimeout(arguments.callee,timeU*3/4);
+     setTimeout(arguments.callee,timeU*7/10);
      //createText(input.value.toUpperCase());
     }
 
