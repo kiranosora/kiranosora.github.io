@@ -1,2 +1,29 @@
-<iframe id="NikiFrame" src="Niki_2016.05.18.txt" frameborder="0" border="0" scrolling="0" onload="iFrameHeight(event)"></iframe>
+<link href="css/nikiStyle.css" rel="stylesheet" type="text/css" />
 
+<div class="NikiF">
+    <iframe align="left" id="NikiFrame" src="Niki_2016.05.18.txt" frameborder="0" border="0" scrolling="0" onload="iFrameHeight(event)"></iframe>
+</div>
+<script type="text/javascript" language="javascript">   
+function iFrameHeight(event) {   
+    //var ifm= document.getElementById("iframepage");   
+    
+    var ifm=event.srcElement||event.target;
+    //if( ifm == null){ alert("<p>iframe null</p>");}
+    //else{ alert("<p>"+ifm+"</p>");}
+    //if( ifm == null){ document.write("<p>iframe null</p>");}
+    //else{ document.write("<p>"+ifm+"</p>");}
+    //var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
+    var subWeb= ifm.contentDocument;
+    //if(subWeb == null) {document.write("<p>null subWeb !!!!!!!!!!</p>");}
+    //var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
+    if(ifm != null && subWeb != null) {
+           //ifm.height = 1024;
+           ifm.height = subWeb.body.scrollHeight ;
+           //ifm.height = subWeb.body.scrollHeight + subWeb.body.scrollHeight + subWeb.body.scrollHeight;
+           //ifm.width = subWeb.body.scrollWidth;
+           ifm.width = subWeb.body.innerWidth;
+           //ifm.height = document.body.scrollHeight;
+           //ifm.width = window.screen.width;
+    } 
+    }   
+</script>

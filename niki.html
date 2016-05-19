@@ -1,5 +1,8 @@
-<iframe id="NikiFrame" src="Niki_2016.05.18.txt" frameborder="0" border="0" scrolling="0" onload="iFrameHeight(event)"></iframe>
+<link href="css/nikiStyle.css" rel="stylesheet" type="text/css" />
 
+<div class="NikiF">
+    <iframe align="left" id="NikiFrame" src="Niki_2016.05.18.txt" frameborder="0" border="0" scrolling="0" onload="iFrameHeight(event)"></iframe>
+</div>
 <script type="text/javascript" language="javascript">   
 function iFrameHeight(event) {   
     //var ifm= document.getElementById("iframepage");   
@@ -17,7 +20,8 @@ function iFrameHeight(event) {
            //ifm.height = 1024;
            ifm.height = subWeb.body.scrollHeight ;
            //ifm.height = subWeb.body.scrollHeight + subWeb.body.scrollHeight + subWeb.body.scrollHeight;
-           ifm.width = subWeb.body.scrollWidth;
+           //ifm.width = subWeb.body.scrollWidth;
+           ifm.width = subWeb.body.innerWidth;
            //ifm.height = document.body.scrollHeight;
            //ifm.width = window.screen.width;
     } 
