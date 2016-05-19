@@ -102,7 +102,8 @@
 
     function formText() {
         for(var i= 0, l=textPixels.length; i<l; i++) {
-            circles[i].originX = offsetX + textPixels[i].x;
+            circles[i].originX = 100 + textPixels[i].x;
+            //circles[i].originX = offsetX + textPixels[i].x;
             circles[i].originY = offsetY + textPixels[i].y;
             tweenCircle(circles[i], 'in');
         }

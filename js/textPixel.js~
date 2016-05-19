@@ -69,7 +69,7 @@
     // animating circles
     function animate() {
         stage.update();
-        setTimeout(function(){requestAnimationFrame(animate);},1000/24);
+        setTimeout(function(){requestAnimationFrame(animate);},1000/60);
         //requestAnimationFrame(animate);
     }
 
@@ -102,8 +102,10 @@
 
     function formText() {
         for(var i= 0, l=textPixels.length; i<l; i++) {
-            circles[i].originX = offsetX + textPixels[i].x;
+            circles[i].originX = 100 + textPixels[i].x;
             circles[i].originY = offsetY + textPixels[i].y;
+            //circles[i].originX = offsetX + textPixels[i].x;
+            //circles[i].originY = offsetY + textPixels[i].y;
             tweenCircle(circles[i], 'in');
         }
         textFormed = true;
