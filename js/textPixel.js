@@ -14,7 +14,7 @@
         initCircles();
         animate();
         addListeners();
-        setTimeout(function(){loopExplode();},timeU/10);
+        setTimeout(function(){loopExplode();},timeU/20);
         /*setTimeout(function() {
                     //createText("DEFAULT VALUE ガンダム");
                     setTimeout(function(){createText("曹晶晶");},2000);
