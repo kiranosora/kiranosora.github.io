@@ -203,7 +203,7 @@
      //explode();},timeU/10);
      //setTimeout(function(){createText("曹晶晶");},timeU/10);
      //setTimeout(function(){alert("delay");},1000);
-     explode();
+     setTimeout(function(){explode();},timeU/2);
      //setTimeout(function(){explode();},400);
      setTimeout(arguments.callee,timeU/2);
      //createText(input.value.toUpperCase());
