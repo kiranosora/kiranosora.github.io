@@ -86,7 +86,7 @@
     function tweenCircle(c, dir) {
         if(c.tween) c.tween.kill();
         if(dir == 'in') {
-            c.tween = TweenLite.to(c, 0.4, {x: c.originX, y: c.originY, ease:Quad.easeInOut, alpha: 1, radius: 3, scaleX: 0.4, scaleY: 0.4, onComplete: function() {
+            c.tween = TweenLite.to(c, 0.4, {x: c.originX, y: c.originY, ease:Quad.easeInOut, alpha: 1, radius: 1, scaleX: 0.4, scaleY: 0.4, onComplete: function() {
                 c.movement = 'jiggle';
                 tweenCircle(c);
             }});
