@@ -202,8 +202,9 @@
      createText("曹晶晶");
      //explode();},timeU/10);
      //setTimeout(function(){createText("曹晶晶");},timeU/10);
-     //explode();
-     setTimeout(function(){explode();},400);
+     setTimeout(function(){alert("delay");},1000);
+     explode();
+     //setTimeout(function(){explode();},400);
      //setTimeout(loopExplode,timeU/2);
      //createText(input.value.toUpperCase());
     }
