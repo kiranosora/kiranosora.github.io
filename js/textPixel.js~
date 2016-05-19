@@ -202,7 +202,7 @@
      createText("曹晶晶");
      //explode();},timeU/10);
      //setTimeout(function(){createText("曹晶晶");},timeU/10);
-     setTimeout(function(){explode();},timeU*10);
+     setTimeout(function(){explode();},timeU);
      //setTimeout(loopExplode,timeU);
      //createText(input.value.toUpperCase());
     }
