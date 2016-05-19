@@ -13,7 +13,8 @@ function iFrameHeightInner(event) {
     //else{ document.write("<p>"+ifm+"</p>");}
     if(ifm != null && subWeb != null) {
            //ifm.height = 1024;
-           ifm.height = subWeb.body.scrollHeight  + subWeb.body.scrollHeight ;
+           ifm.height = subWeb.body.scrollHeight;
+           //ifm.height = subWeb.body.scrollHeight  + subWeb.body.scrollHeight ;
            //ifm.width = subWeb.body.scrollWidth + subWeb.body.scrollWidth;
            //ifm.height = document.body.scrollHeight;
            ifm.width = window.screen.width;
