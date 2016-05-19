@@ -2,6 +2,7 @@
     var stage, textStage, form, input;
     var circles, textPixels, textFormed;
     var offsetX, offsetY, text;
+    var heightU, widthU;
     var colors = ['#B2949D', '#FFF578', '#FF5F8D', '#37A9CC', '#188EB2'];
     var textLength= 2000;/* The maximum length of text to show */
 
@@ -16,18 +17,22 @@
 
     // Init Canvas
     function initStages() {
-        offsetX = (window.innerWidth-0)/2;
-        //offsetX = (window.innerWidth-textLength)/2;
-        //offsetX = (window.innerWidth-600)/2;
-        offsetY = (window.innerHeight-300)*3/4;
+        heightU=window.screen.height/2-10;
+        widthU=window.screen.width-10;
+        //heightU=window.innerHeight;
+        //widthU=window.innerWidth;
+        offsetX = (widthU-0)/2;
+        //offsetX = (widthU-textLength)/2;
+        //offsetX = (widthU-600)/2;
+        offsetY = (heightU-300)*3/4;
         textStage = new createjs.Stage("text");
         textStage.canvas.width = textLength;
         //textStage.canvas.width = 600;
         textStage.canvas.height = 200;
 
         stage = new createjs.Stage("stage");
-        stage.canvas.width = window.innerWidth;
-        stage.canvas.height = window.innerHeight;
+        stage.canvas.width = widthU;
+        stage.canvas.height = heightU;
     }
 
     function initForm() {
@@ -49,8 +54,8 @@
         //for(var i=0; i<600; i++) {
             var circle = new createjs.Shape();
             var r = 7;
-            var x = window.innerWidth*Math.random();
-            var y = window.innerHeight*Math.random();
+            var x = widthU*Math.random();
+            var y = heightU*Math.random();
             var color = colors[Math.floor(i%colors.length)];
             var alpha = 0.2 + Math.random()*0.5;
             circle.alpha = alpha;
@@ -81,7 +86,7 @@
                 tweenCircle(c);
             }});
         } else if(dir == 'out') {
-            c.tween = TweenLite.to(c, 0.8, {x: window.innerWidth*Math.random(), y: window.innerHeight*Math.random(), ease:Quad.easeInOut, alpha: 0.2 + Math.random()*0.5, scaleX: 1, scaleY: 1, onComplete: function() {
+            c.tween = TweenLite.to(c, 0.8, {x: widthU*Math.random(), y: heightU*Math.random(), ease:Quad.easeInOut, alpha: 0.2 + Math.random()*0.5, scaleX: 1, scaleY: 1, onComplete: function() {
                 c.movement = 'float';
                 tweenCircle(c);
             }});
