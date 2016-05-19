@@ -124,7 +124,8 @@
         textFormed = true;
         if(textPixels.length < circles.length) {
             for(var j = textPixels.length; j<circles.length; j++) {
-                setTimeout(function(){circles[j].tween = TweenLite.to(circles[j], 0.4, {alpha: 0.1});},100);
+                circles[j].tween = TweenLite.to(circles[j], 0.4, {alpha: 0.1});
+                //setTimeout(function(){circles[j].tween = TweenLite.to(circles[j], 0.4, {alpha: 0.1});},100);
             }
         }
     }
