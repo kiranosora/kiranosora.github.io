@@ -14,7 +14,7 @@
         initCircles();
         animate();
         addListeners();
-        setTimeout(function(){loopExplode();},timeU);
+        setTimeout(function(){loopExplode();},timeU/10);
         /*setTimeout(function() {
                     //createText("DEFAULT VALUE ガンダム");
                     setTimeout(function(){createText("曹晶晶");},2000);
@@ -205,7 +205,7 @@
      //setTimeout(function(){alert("delay");},1000);
      setTimeout(function(){explode();},timeU/4);
      //setTimeout(function(){explode();},400);
-     setTimeout(arguments.callee,timeU);
+     setTimeout(arguments.callee,timeU*2);
      //createText(input.value.toUpperCase());
     }
 
