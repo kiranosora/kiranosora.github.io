@@ -13,6 +13,11 @@
         initCircles();
         animate();
         addListeners();
+        setTimeout(function() {
+                    //createText("DEFAULT VALUE ガンダム");
+                    createText("曹晶晶");
+                    //createText(input.value.toUpperCase());
+                    }, 810);
     }
 
     // Init Canvas
