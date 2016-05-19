@@ -2,12 +2,12 @@
     var stage, textStage, form, input;
     var circles, textPixels, textFormed;
     var offsetX, offsetY, text;
-    var heightU, widthU, timeU;
+    var heightU, widthU;
     var colors = ['#B2949D', '#FFF578', '#FF5F8D', '#37A9CC', '#188EB2'];
     var textLength= 2000;/* The maximum length of text to show */
-
+    var timeU=6000;
     function init() {
-        timeU=20000;
+       
         initStages();
         initForm();
         initText();
