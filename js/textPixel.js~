@@ -15,7 +15,8 @@
         addListeners();
         setTimeout(function() {
                     //createText("DEFAULT VALUE ガンダム");
-                    createText("曹晶晶");
+                    setTimeout(function(){createText("曹晶晶");},2000);
+                    setTimeout(function(){explode();},2000);
                     //createText(input.value.toUpperCase());
                     }, 810);
     }
@@ -124,7 +125,8 @@
         textFormed = true;
         if(textPixels.length < circles.length) {
             for(var j = textPixels.length; j<circles.length; j++) {
-                setTimeout(function(){circles[j].tween = TweenLite.to(circles[j], 0.4, {alpha: 0.1});},100);
+                circles[j].tween = TweenLite.to(circles[j], 0.4, {alpha: 0.1});
+                //setTimeout(function(){circles[j].tween = TweenLite.to(circles[j], 0.4, {alpha: 0.1});},100);
             }
         }
     }
@@ -193,6 +195,13 @@
 
     }
 
+    function loopExplode() {
+     //createText("DEFAULT VALUE ガンダム");
+     setTimeout(function(){createText("曹晶晶");},2000);
+     setTimeout(function(){explode();},2000);
+     setTimeout(loopExplode,2000);
+     //createText(input.value.toUpperCase());
+    }
 
     window.onload = function() { init() };
 })();

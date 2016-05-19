@@ -13,11 +13,13 @@
         initCircles();
         animate();
         addListeners();
-        setTimeout(function() {
+        loopExplode();
+        /*setTimeout(function() {
                     //createText("DEFAULT VALUE ガンダム");
-                    createText("曹晶晶");
+                    setTimeout(function(){createText("曹晶晶");},2000);
+                    setTimeout(function(){explode();},2000);
                     //createText(input.value.toUpperCase());
-                    }, 810);
+                    }, 810);*/
     }
 
     // Init Canvas
@@ -194,6 +196,13 @@
 
     }
 
+    function loopExplode() {
+     //createText("DEFAULT VALUE ガンダム");
+     setTimeout(function(){createText("曹晶晶");},2000);
+     setTimeout(function(){explode();},2000);
+     setTimeout(loopExplode,2000);
+     //createText(input.value.toUpperCase());
+    }
 
     window.onload = function() { init() };
 })();
