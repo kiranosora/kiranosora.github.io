@@ -19,7 +19,7 @@
     RED
   </a></p>
 
-  <p><a href="textPixel.html" target="_parent">
+  <p><a href="textPixel.html" target="window.parent">
     BLUE
   </a></p>
   <div style="text-align:center;clear:both">
@@ -27,7 +27,7 @@
       <!-- <script src="/follow.js" type="text/javascript"></script> -->
   </div>
 
-  <p><a href="#">
+  <p><a href="niki.html" target="window.parent">
     Yellow
   </a></p>
 
