@@ -199,9 +199,9 @@
 
     function loopExplode() {
      //createText("DEFAULT VALUE ガンダム");
-     setTimeout(function(){createText("曹晶晶");},2000);
-     setTimeout(function(){explode();},2000);
-     setTimeout(loopExplode,2000);
+     setTimeout(function(){createText("曹晶晶");},timeU);
+     setTimeout(function(){explode();},timeU);
+     setTimeout(loopExplode,timeU);
      //createText(input.value.toUpperCase());
     }
 
