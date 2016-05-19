@@ -2,11 +2,12 @@
     var stage, textStage, form, input;
     var circles, textPixels, textFormed;
     var offsetX, offsetY, text;
-    var heightU, widthU;
+    var heightU, widthU, timeU;
     var colors = ['#B2949D', '#FFF578', '#FF5F8D', '#37A9CC', '#188EB2'];
     var textLength= 2000;/* The maximum length of text to show */
 
     function init() {
+        timeU=20000;
         initStages();
         initForm();
         initText();
@@ -198,9 +199,9 @@
 
     function loopExplode() {
      //createText("DEFAULT VALUE ガンダム");
-     setTimeout(function(){createText("曹晶晶");},2000);
-     setTimeout(function(){explode();},2000);
-     setTimeout(loopExplode,2000);
+     setTimeout(function(){createText("曹晶晶");},timeU);
+     setTimeout(function(){explode();},timeU);
+     setTimeout(loopExplode,timeU);
      //createText(input.value.toUpperCase());
     }
 
