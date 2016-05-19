@@ -89,13 +89,13 @@
             c.tween = TweenLite.to(c, 0.4, {x: c.originX, y: c.originY, ease:Quad.easeInOut, alpha: 1, radius: 1, scaleX: 0.4, scaleY: 0.4, onComplete: function() {
                 c.movement = 'jiggle';
                 tweenCircle(c);
-                alert("dir==in");
+                //alert("dir==in");
             }});
         } else if(dir == 'out') {
             c.tween = TweenLite.to(c, 0.8, {x: widthU*Math.random(), y: heightU*Math.random(), ease:Quad.easeInOut, alpha: 0.2 + Math.random()*0.5, scaleX: 1, scaleY: 1, onComplete: function() {
                 c.movement = 'float';
                 tweenCircle(c);
-                alert("dir==out");
+                //alert("dir==out");
             }});
         } else {
             if(c.movement == 'float') {
@@ -103,13 +103,13 @@
                     onComplete: function() {
                         setTimeout(function(){tweenCircle(c);},2000);
                     }});
-                alert("float");
+                //alert("float");
             } else {
                 c.tween = TweenLite.to(c, 0.05, {x: c.originX + Math.random()*3, y: c.originY + Math.random()*3, ease:Quad.easeInOut,
                     onComplete: function() {
                         setTimeout(function(){tweenCircle(c);},2000);
                     }});
-                alert("else");
+                //alert("else");
             }
         }
     }
