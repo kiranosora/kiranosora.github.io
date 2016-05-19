@@ -17,8 +17,8 @@
 
     // Init Canvas
     function initStages() {
-        heightU=window.screen.width-10;
-        widthU=window.screen.height-10;
+        heightU=window.screen.height-10;
+        widthU=window.screen.width-10;
         //heightU=window.innerHeight;
         //widthU=window.innerWidth;
         offsetX = (widthU-0)/2;

@@ -17,7 +17,7 @@
 
     // Init Canvas
     function initStages() {
-        heightU=window.screen.height-10;
+        heightU=window.screen.height/2-10;
         widthU=window.screen.width-10;
         //heightU=window.innerHeight;
         //widthU=window.innerWidth;
