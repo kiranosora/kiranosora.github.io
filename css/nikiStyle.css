@@ -2,7 +2,8 @@
 {
 	clear:both;
 	overflow:hidden;
-	margin:100px auto 0px auto;
+	margin:10px auto 0px auto;
+	/*margin:100px auto 0px auto;*/
 	background-image: url(../images/background/nikiBack.jpg);
 	opacity:0.9;
 }
