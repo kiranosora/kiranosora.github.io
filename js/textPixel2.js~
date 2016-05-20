@@ -4,32 +4,54 @@
     var offsetX, offsetY, text;
     var heightU, widthU;
     var colors = ['#B2949D', '#FFF578', '#FF5F8D', '#37A9CC', '#188EB2'];
-    var textLength= 2000;/* The maximum length of text to show */
-
+    var textLength= 1000;/* The maximum length of text to show */
+    var timeU=8000;
+    var ua=navigator.userAgent;
+    var mobileF=false;
+    if(ua.match("Mobile") != null ||ua.match("mobile") != null)
+    {
+        mobileF=true;
+    }
+    alert('mobileF : ' +mobileF);
     function init() {
+       
         initStages();
         initForm();
         initText();
         initCircles();
         animate();
         addListeners();
-        setTimeout(function() {
+        if(mobileF)
+        {
+            createText("曹晶晶");
+        }else
+        {
+            setTimeout(function(){loopExplode();},timeU/30);
+        }
+        /*setTimeout(function() {
                     //createText("DEFAULT VALUE ガンダム");
-                    createText("我爱你");
+                    setTimeout(function(){createText("曹晶晶");},2000);
+                    setTimeout(function(){explode();},2000);
                     //createText(input.value.toUpperCase());
-                    }, 810);
+                    }, 810);*/
     }
 
     // Init Canvas
     function initStages() {
         heightU=window.screen.height/2-10;
         widthU=window.screen.width-10;
+        if(mobileF)
+        {
+            alert('mobileF : ' +mobileF);
+            heightU=(window.screen.height/2)*2;
+            widthU=(window.screen.width)*2;
+        }
         //heightU=window.innerHeight;
         //widthU=window.innerWidth;
         offsetX = (widthU-0)/2;
         //offsetX = (widthU-textLength)/2;
         //offsetX = (widthU-600)/2;
-        offsetY = (heightU-300)*3/4;
+        offsetY = (heightU-300)/4;
         textStage = new createjs.Stage("text");
         textStage.canvas.width = textLength;
         //textStage.canvas.width = 600;
@@ -59,7 +81,7 @@
         //for(var i=0; i<600; i++) {
             var circle = new createjs.Shape();
             var r = 7;
-            var x = widthU*Math.random();
+            var x = (widthU+10)*Math.random();
             var y = heightU*Math.random();
             var color = colors[Math.floor(i%colors.length)];
             var alpha = 0.2 + Math.random()*0.5;
@@ -89,30 +111,40 @@
             c.tween = TweenLite.to(c, 0.4, {x: c.originX, y: c.originY, ease:Quad.easeInOut, alpha: 1, radius: 5, scaleX: 0.4, scaleY: 0.4, onComplete: function() {
                 c.movement = 'jiggle';
                 tweenCircle(c);
+                //alert("dir==in");
             }});
         } else if(dir == 'out') {
             c.tween = TweenLite.to(c, 0.8, {x: widthU*Math.random(), y: heightU*Math.random(), ease:Quad.easeInOut, alpha: 0.2 + Math.random()*0.5, scaleX: 1, scaleY: 1, onComplete: function() {
                 c.movement = 'float';
                 tweenCircle(c);
+                //alert("dir==out");
             }});
         } else {
             if(c.movement == 'float') {
-                c.tween = TweenLite.to(c, 5 + Math.random()*3.5, {x: c.x + -100+Math.random()*200, y: c.y + -100+Math.random()*200, ease:Quad.easeInOut, alpha: 0.2 + Math.random()*0.5,
+                c.tween = TweenLite.to(c, 5 + Math.random()*3.5, {x: c.x + -100+Math.random()*200, y: c.y + -100+Math.random()*200, ease:Quad.easeInOut, alpha: 0.2 + Math.random()*0.5, 
                     onComplete: function() {
                         setTimeout(function(){tweenCircle(c);},2000);
                     }});
+                //alert("float");
             } else {
                 c.tween = TweenLite.to(c, 0.05, {x: c.originX + Math.random()*3, y: c.originY + Math.random()*3, ease:Quad.easeInOut,
                     onComplete: function() {
                         setTimeout(function(){tweenCircle(c);},2000);
                     }});
+                //alert("else");
             }
         }
     }
 
     function formText() {
         for(var i= 0, l=textPixels.length; i<l; i++) {
-            circles[i].originX = 100 + textPixels[i].x;
+            if(mobileF)
+            {
+                circles[i].originX = 10 + textPixels[i].x;
+            }else
+            {
+                circles[i].originX = 100 + textPixels[i].x;
+            }
             //circles[i].originX = offsetX + textPixels[i].x;
             circles[i].originY = offsetY + textPixels[i].y;
             tweenCircle(circles[i], 'in');
@@ -121,6 +153,7 @@
         if(textPixels.length < circles.length) {
             for(var j = textPixels.length; j<circles.length; j++) {
                 circles[j].tween = TweenLite.to(circles[j], 0.4, {alpha: 0.1});
+                //setTimeout(function(){circles[j].tween = TweenLite.to(circles[j], 0.4, {alpha: 0.1});},100);
             }
         }
     }
@@ -139,6 +172,15 @@
     // event handlers
     function addListeners() {
         form.addEventListener('submit', function(e) {
+            top.location.href="../niki.html";
+            //top.location.href="../verification.html";
+            
+
+        });
+    }
+
+    /*function addListeners() {
+        form.addEventListener('submit', function(e) {
             e.preventDefault();
             if(textFormed) {
                 explode();
@@ -156,7 +198,7 @@
             }
 
         });
-    }
+    }*/
 
     function createText(t) {
         var fontSize = 860/(t.length);
@@ -189,6 +231,17 @@
 
     }
 
+    function loopExplode() {
+     //createText("DEFAULT VALUE ガンダム");
+     createText("曹晶晶");
+     //explode();},timeU/10);
+     //setTimeout(function(){createText("曹晶晶");},timeU/10);
+     //setTimeout(function(){alert("delay");},1000);
+     setTimeout(function(){explode();},timeU/2);
+     //setTimeout(function(){explode();},400);
+     setTimeout(arguments.callee,timeU*3/4);
+     //createText(input.value.toUpperCase());
+    }
 
     window.onload = function() { init() };
 })();

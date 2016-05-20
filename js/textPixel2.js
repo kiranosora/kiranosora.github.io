@@ -23,7 +23,7 @@
         addListeners();
         if(mobileF)
         {
-            createText("曹晶晶");
+            createText("我爱你");
         }else
         {
             setTimeout(function(){loopExplode();},timeU/30);
@@ -233,7 +233,7 @@
 
     function loopExplode() {
      //createText("DEFAULT VALUE ガンダム");
-     createText("曹晶晶");
+     createText("我爱你");
      //explode();},timeU/10);
      //setTimeout(function(){createText("曹晶晶");},timeU/10);
      //setTimeout(function(){alert("delay");},1000);
