@@ -148,7 +148,7 @@
     function addListeners() {
         form.addEventListener('submit', function(e) {
             top.location.href="../verification.html";
-            }
+            
 
         });
     }
