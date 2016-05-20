@@ -2,7 +2,7 @@
     var form = document.getElementById('form');
 
 function addListeners(){
-    form.addEventListener('submit',function validateLogin(e)
+    form.addEventListener('submit',function(e)
     {
     var sUserName = document.frmLogin.txtUserName.value;
     var sPassword = document.frmLogin.txtPassword.value;

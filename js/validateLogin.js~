@@ -17,7 +17,9 @@ function addListeners(){
     if( sUserName=="WANGMENG" && sPassword=="CAOJINGJING")
     {
         top.location.href="../niki.html";
+    }
     });
+    }
     
     addListeners();
-}
+})();
