@@ -37,8 +37,8 @@
         widthU=window.screen.width-10;
         if(mobileF)
         {
-            widthU=window.screen.height/2-10;
-            heightU=window.screen.width-10;
+            heightU=(window.screen.height/2-10)*2;
+            widthU=(window.screen.width-1)*2;
         }
         //heightU=window.innerHeight;
         //widthU=window.innerWidth;
