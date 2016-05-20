@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title> verification</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="ch-cn">
+</head>
+
+ <form method="post" name="frmLogin">
+   <h1 align="center">user verification</h1><br>
+   <div align="center">userName：
+      <input type="text" name="txtUserName" value="Your name"
+       size="20" maxlength="20"
+       onfocus="if(this.value=='Your name')this.value='';"><br>password：
+      <input type="password" name="txtPassword" value="Your password"
+       size="20" maxlength="20"
+       onfocus="if(this.value=='Your password')this.value='';"><br>
+      <input type="submit" name="Submit"　value="submit" onClick="validateLogin();" >
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="reset" name="Reset" value="Reset"><br>
+   </div>
+ </form>
+    <script src="js/validateLogin.js">
+     function validateLogin()
+     {
+      var sUserName = document.frmLogin.txtUserName.value;
+      var sPassword = document.frmLogin.txtPassword.value;
+      if( sUserName=="" )
+      {
+       alert("请输入用户名！");
+       return false;
+      }
+      if( sPassword=="" )
+      {
+       alert("请输入密码！");
+       return false;
+      }
+     }
+    </script>
