@@ -12,7 +12,7 @@
     {
         mobileF=true;
     }
-    alert('mobileF : ' +mobileF);
+    //alert('mobileF : ' +mobileF);
     function init() {
        
         initStages();
@@ -42,7 +42,7 @@
         widthU=window.screen.width-10;
         if(mobileF)
         {
-            alert('mobileF : ' +mobileF);
+            //alert('mobileF : ' +mobileF);
             heightU=(window.screen.height/2)*2;
             widthU=(window.screen.width)*2;
         }

@@ -58,14 +58,21 @@
         textStage.canvas.height = 200;
 
         stage = new createjs.Stage("stage");
-        stage.canvas.width = widthU;
+        if(mobileF)
+        {
+            stage.canvas.width = widthU*1.2;
+        }else
+        {
+            stage.canvas.width = widthU;
+        }
         stage.canvas.height = heightU;
     }
 
     function initForm() {
         form = document.getElementById('form');
         form.style.top = offsetY+200+'px';
-        form.style.left = offsetX+'px';
+        form.style.left = offsetX/2+'px';
+        //form.style.left = offsetX+'px';
         input = document.getElementById('inputText');
     }
 
