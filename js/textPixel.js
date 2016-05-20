@@ -14,6 +14,7 @@
         initCircles();
         animate();
         addListeners();
+        createText("曹晶晶");
         setTimeout(function(){loopExplode();},timeU/30);
         /*setTimeout(function() {
                     //createText("DEFAULT VALUE ガンダム");
@@ -25,10 +26,10 @@
 
     // Init Canvas
     function initStages() {
-        heightU=window.screen.height/2-10;
-        widthU=window.screen.width-10;
-        //heightU=window.innerHeight;
-        //widthU=window.innerWidth;
+        //heightU=window.screen.height/2-10;
+        //widthU=window.screen.width-10;
+        heightU=window.innerHeight;
+        widthU=window.innerWidth;
         offsetX = (widthU-0)/2;
         //offsetX = (widthU-textLength)/2;
         //offsetX = (widthU-600)/2;
