@@ -147,7 +147,8 @@
     // event handlers
     function addListeners() {
         form.addEventListener('submit', function(e) {
-            top.location.href="../verification.html";
+            top.location.href="../niki.html";
+            //top.location.href="../verification.html";
             
 
         });
