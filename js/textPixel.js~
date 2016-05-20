@@ -205,7 +205,7 @@
      //setTimeout(function(){alert("delay");},1000);
      setTimeout(function(){explode();},timeU/2);
      //setTimeout(function(){explode();},400);
-     setTimeout(arguments.callee,timeU*7/10);
+     setTimeout(arguments.callee,timeU*3/4);
      //createText(input.value.toUpperCase());
     }
 
