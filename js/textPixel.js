@@ -21,8 +21,13 @@
         initCircles();
         animate();
         addListeners();
-        createText("曹晶晶");
-        //setTimeout(function(){loopExplode();},timeU/30);
+        if(mobileF)
+        {
+            createText("曹晶晶");
+        }else
+        {
+            setTimeout(function(){loopExplode();},timeU/30);
+        }
         /*setTimeout(function() {
                     //createText("DEFAULT VALUE ガンダム");
                     setTimeout(function(){createText("曹晶晶");},2000);
@@ -38,8 +43,8 @@
         if(mobileF)
         {
             alert('mobileF : ' +mobileF);
-            heightU=(window.screen.height/2-10)*2;
-            widthU=(window.screen.width-1)*2;
+            heightU=(window.screen.height/2)*2;
+            widthU=(window.screen.width)*2;
         }
         //heightU=window.innerHeight;
         //widthU=window.innerWidth;
@@ -133,7 +138,13 @@
 
     function formText() {
         for(var i= 0, l=textPixels.length; i<l; i++) {
-            circles[i].originX = 100 + textPixels[i].x;
+            if(mobileF)
+            {
+                circles[i].originX = 10 + textPixels[i].x;
+            }else
+            {
+                circles[i].originX = 100 + textPixels[i].x;
+            }
             //circles[i].originX = offsetX + textPixels[i].x;
             circles[i].originY = offsetY + textPixels[i].y;
             tweenCircle(circles[i], 'in');
