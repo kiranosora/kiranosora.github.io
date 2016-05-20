@@ -81,7 +81,7 @@
         //for(var i=0; i<600; i++) {
             var circle = new createjs.Shape();
             var r = 7;
-            var x = widthU*Math.random();
+            var x = (widthU+10)*Math.random();
             var y = heightU*Math.random();
             var color = colors[Math.floor(i%colors.length)];
             var alpha = 0.2 + Math.random()*0.5;
