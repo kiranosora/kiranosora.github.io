@@ -21,7 +21,8 @@ function addListeners(){
         alert("Verification Successed !");
         //window.open("../niki.html");
         //window.open("/niki.html");
-        location.href="../niki.html";
+        var aa=location.href="../niki.html";
+        alert('aa = ' + aa);
         //top.location.href="../niki.html";
         //top.location.href="/niki.html";
         return true;
