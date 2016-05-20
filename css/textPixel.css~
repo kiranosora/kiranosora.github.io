@@ -36,8 +36,4 @@ form {
   height: 100px;
 }
 
-#picButton{
-    background:url("../images/picButton.png") no-repeat;
-    border:0px;
-    cursor:pointer;
-}
+#hiddenButton
