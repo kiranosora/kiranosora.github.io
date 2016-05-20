@@ -233,4 +233,4 @@
     }
 
     window.onload = function() { init() };
-
+})();
