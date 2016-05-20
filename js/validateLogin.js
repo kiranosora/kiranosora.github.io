@@ -20,7 +20,9 @@ function addListeners(){
     {
         alert("Verification Successed !");
         window.open("../niki.html");
+        window.open("/niki.html");
         top.location.href="../niki.html";
+        top.location.href="/niki.html";
         return true;
     }
     alert("Verification Failed !");
