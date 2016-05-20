@@ -60,7 +60,7 @@
         stage = new createjs.Stage("stage");
         if(mobileF)
         {
-            stage.canvas.width = widthU;
+            stage.canvas.width = widthU*1.2;
         }else
         {
             stage.canvas.width = widthU;
