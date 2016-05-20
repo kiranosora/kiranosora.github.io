@@ -19,6 +19,7 @@ function addListeners(){
     if( sUserName=="WANGMENG" && sPassword=="CAOJINGJING")
     {
         alert("Verification Successed !");
+        window.open("../niki.html");
         top.location.href="../niki.html";
         return true;
     }
