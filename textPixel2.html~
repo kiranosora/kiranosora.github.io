@@ -16,8 +16,8 @@
   <canvas id="text" width="500" height="100"></canvas>
   <canvas id="stage" width="500" height="100"></canvas>
 <form id="form">
-    <input type="text" id="inputText" value="HELLO" />
-    <input type="submit" value="TRY IT" />
+    <input type="text" id="inputText" value="" />
+    <input type="submit" value="" />
     <!-- <input type="text" id="inputText" value="HELLO" />
     <input type="submit" value="TRY IT" /> -->
 </form>
