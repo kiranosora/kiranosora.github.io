@@ -65,7 +65,7 @@
     function initForm() {
         form = document.getElementById('form');
         form.style.top = offsetY*2.5+'px';
-        form.style.left = offsetX/2+'px';
+        form.style.left = offsetX/1.5+'px';
         //form.style.left = offsetX+'px';
         input = document.getElementById('inputText');
     }
