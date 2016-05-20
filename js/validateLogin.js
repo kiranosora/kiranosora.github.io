@@ -19,10 +19,11 @@ function addListeners(){
     if( sUserName=="WANGMENG" && sPassword=="CAOJINGJING")
     {
         alert("Verification Successed !");
-        window.open("../niki.html");
-        window.open("/niki.html");
-        top.location.href="../niki.html";
-        top.location.href="/niki.html";
+        //window.open("../niki.html");
+        //window.open("/niki.html");
+        location.href="../niki.html";
+        //top.location.href="../niki.html";
+        //top.location.href="/niki.html";
         return true;
     }
     alert("Verification Failed !");
