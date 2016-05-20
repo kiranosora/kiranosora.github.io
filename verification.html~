@@ -15,7 +15,7 @@
       <input type="password" name="txtPassword" value="Your password"
        size="20" maxlength="20"
        onfocus="if(this.value=='Your password')this.value='';"><br>
-      <input type="submit" name="Submit"　value="submit" onClick="validateLogin();" >
+      <input type="submit" name="Submit"　value="submit"  >
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <input type="reset" name="Reset" value="Reset"><br>
    </div>
