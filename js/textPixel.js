@@ -15,7 +15,7 @@
         animate();
         addListeners();
         createText("曹晶晶");
-        setTimeout(function(){loopExplode();},timeU/30);
+        //setTimeout(function(){loopExplode();},timeU/30);
         /*setTimeout(function() {
                     //createText("DEFAULT VALUE ガンダム");
                     setTimeout(function(){createText("曹晶晶");},2000);
