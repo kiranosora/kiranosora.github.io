@@ -58,7 +58,13 @@
         textStage.canvas.height = 200;
 
         stage = new createjs.Stage("stage");
-        stage.canvas.width = widthU;
+        if(mobileF)
+        {
+            stage.canvas.width = widthU*1.2;
+        }else
+        {
+            stage.canvas.width = widthU;
+        }
         stage.canvas.height = heightU;
     }
 

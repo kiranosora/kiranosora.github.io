@@ -65,7 +65,7 @@
     function initForm() {
         form = document.getElementById('form');
         form.style.top = offsetY*2.5+'px';
-        form.style.left = offsetX/1.5+'px';
+        form.style.left = offsetX/1.2+'px';
         //form.style.left = offsetX+'px';
         input = document.getElementById('inputText');
     }
@@ -82,7 +82,7 @@
         //for(var i=0; i<600; i++) {
             var circle = new createjs.Shape();
             var r = 7;
-            var x = (widthU+10)*Math.random();
+            var x = widthU*Math.random();
             var y = heightU*Math.random();
             var color = colors[Math.floor(i%colors.length)];
             var alpha = 0.2 + Math.random()*0.5;
