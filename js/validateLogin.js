@@ -15,5 +15,6 @@ function validateLogin()
  if( sUserName=="WANGMENG" && sPassword=="CAOJINGJING")
  {
      top.location.href="../niki.html";
+     return true;
  }
 }
