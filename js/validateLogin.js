@@ -9,15 +9,20 @@ function addListeners(){
     if( sUserName=="" )
     {
         alert("请输入用户名！");
+        return false;
     }
     if( sPassword=="" )
     {
         alert("请输入密码！");
+        return false;
     }
     if( sUserName=="WANGMENG" && sPassword=="CAOJINGJING")
     {
         top.location.href="../niki.html";
+        return true;
     }
+    alert("Verification Failed !");
+    return false;
     });
     }
     
