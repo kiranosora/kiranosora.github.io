@@ -4,6 +4,11 @@
 </div>
 <script type="text/javascript" language="javascript">   
 function iFrameHeight(event) {   
+    var mobileF=false;
+    if(ua.match("Mobile") != null ||ua.match("mobile") != null)
+    {
+        mobileF=true;
+    }
     //var ifm= document.getElementById("iframepage");   
     
     var ifm=event.srcElement||event.target;
@@ -18,12 +23,19 @@ function iFrameHeight(event) {
     if(ifm != null && subWeb != null) {
            //ifm.height = 1024;
            //ifm.height = subWeb.body.scrollHeight ;
-           ifm.height = window.screen.height-100;
-           //ifm.height = subWeb.body.scrollHeight + subWeb.body.scrollHeight + subWeb.body.scrollHeight;
-           //ifm.width = subWeb.body.scrollWidth;
-           //ifm.width = subWeb.body.innerWidth;
-           //ifm.height = document.body.scrollHeight;
-           ifm.width = window.screen.width-100;
+           if(mobileF)
+           {
+                ifm.height = window.screen.height-5;
+                ifm.width = window.screen.width-5;
+           }else
+           {
+                ifm.height = window.screen.height-100;
+                //ifm.height = subWeb.body.scrollHeight + subWeb.body.scrollHeight + subWeb.body.scrollHeight;
+                //ifm.width = subWeb.body.scrollWidth;
+                //ifm.width = subWeb.body.innerWidth;
+                //ifm.height = document.body.scrollHeight;
+                ifm.width = window.screen.width-100;
+           }
     } 
     }   
 </script>
