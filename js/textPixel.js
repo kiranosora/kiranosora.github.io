@@ -13,7 +13,7 @@
         initText();
         initCircles();
         animate();
-        addListeners();
+        //addListeners();
         setTimeout(function(){loopExplode();},timeU/30);
         /*setTimeout(function() {
                     //createText("DEFAULT VALUE ガンダム");
@@ -165,6 +165,27 @@
 
         });
     }
+
+    /*function addListeners() {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if(textFormed) {
+                explode();
+                if(input.value != '') {
+                    setTimeout(function() {
+                        //createText("DEFAULT VALUE ガンダム");
+                        createText(input.value.toUpperCase());
+                    }, 810);
+                } else {
+                    textFormed = false;
+                }
+            } else {
+                //createText("DEFAULT VALUE ガンダム");
+                createText(input.value.toUpperCase());
+            }
+
+        });
+    }*/
 
     function createText(t) {
         var fontSize = 860/(t.length);

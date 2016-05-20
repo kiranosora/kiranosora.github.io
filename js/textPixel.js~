@@ -4,7 +4,7 @@
     var offsetX, offsetY, text;
     var heightU, widthU;
     var colors = ['#B2949D', '#FFF578', '#FF5F8D', '#37A9CC', '#188EB2'];
-    var textLength= 2000;/* The maximum length of text to show */
+    var textLength= 1000;/* The maximum length of text to show */
     var timeU=8000;
     function init() {
        
@@ -165,6 +165,27 @@
 
         });
     }
+
+    /*function addListeners() {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if(textFormed) {
+                explode();
+                if(input.value != '') {
+                    setTimeout(function() {
+                        //createText("DEFAULT VALUE ガンダム");
+                        createText(input.value.toUpperCase());
+                    }, 810);
+                } else {
+                    textFormed = false;
+                }
+            } else {
+                //createText("DEFAULT VALUE ガンダム");
+                createText(input.value.toUpperCase());
+            }
+
+        });
+    }*/
 
     function createText(t) {
         var fontSize = 860/(t.length);
