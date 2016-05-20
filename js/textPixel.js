@@ -70,7 +70,7 @@
 
     function initForm() {
         form = document.getElementById('form');
-        form.style.top = offsetY*2.5+'px';
+        form.style.top = offsetY*3+'px';
         form.style.left = offsetX/1.2+'px';
         //form.style.left = offsetX+'px';
         input = document.getElementById('inputText');
