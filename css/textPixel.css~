@@ -17,6 +17,16 @@ input[type="text"] {
   left: 130px;
 }
 
+/*input[type="text"] {
+  border: 1px solid #ddd;
+  padding: 6px;
+  font-size: 18px;
+  width: 200px;
+  text-transform: uppercase;
+  top: 30px;
+  left: 130px;
+}*/
+
 input[type="submit"] {
   display: block;
   width: 100px;
@@ -36,4 +46,8 @@ form {
   height: 100px;
 }
 
-#hiddenButton
+#picButton{
+    background:url("../images/picButton.png") no-repeat;
+    border:0px;
+    cursor:pointer;
+}
