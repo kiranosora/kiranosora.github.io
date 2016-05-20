@@ -6,6 +6,13 @@
     var colors = ['#B2949D', '#FFF578', '#FF5F8D', '#37A9CC', '#188EB2'];
     var textLength= 1000;/* The maximum length of text to show */
     var timeU=8000;
+    var ua=navigator.userAgent;
+    var mobileF=false;
+    if(ua.match("Mobile") != null ||ua.match("mobile") != null)
+    {
+        mobileF=true;
+    }
+    alert('mobileF : ' +mobileF);
     function init() {
        
         initStages();
@@ -26,10 +33,10 @@
 
     // Init Canvas
     function initStages() {
-        //heightU=window.screen.height/2-10;
-        //widthU=window.screen.width-10;
-        heightU=window.innerHeight;
-        widthU=window.innerWidth;
+        heightU=window.screen.height/2-10;
+        widthU=window.screen.width-10;
+        //heightU=window.innerHeight;
+        //widthU=window.innerWidth;
         offsetX = (widthU-0)/2;
         //offsetX = (widthU-textLength)/2;
         //offsetX = (widthU-600)/2;
